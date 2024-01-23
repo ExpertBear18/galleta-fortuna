@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', 'sans-serif';
+}
+
+.app {
+  width: 100%;
+  gap: 2em;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  max-width: 400px;
+  padding-top: 2em;
+  font-size: 2.5em;
+  color: white;
+  text-shadow: 5px 6px 0 #84888a7e;
+  text-align: center;
+}
+
+.article__phrase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 20px;
+  max-width: 80%;
+  min-height: 45vh;
+  background-image: url('../public/assets/rectangle1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 1.5em;
+}
+
+.phrase {
+  width: 80%;
+  padding-left: 7em;
+  z-index: 1;
+  color: black;
+  top: 3em;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #5d5c5a;
+  background-color: #C2E7FF;
+  border: 3px solid #EAF7FF;
+  border-radius: 8px;
+  padding: 0.5rem 3rem;
+  transition: transform .5s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: transform .5s;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 2em;
+  }
+
+  .article__phrase {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .article__phrase {
+    max-width: 80%;
+    background-size: contain;
+  }
+
+  .phrase{
+    width: 90%;
+    padding-left: 1.5em;
+  }
+}
+/*
+.app {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  text-shadow: 10px 10px 0 #84888a7e;
+}
+
+.container__phrase {
+  background-image: url('../assets/rectangle1.svg');
+  background-repeat: no-repeat;
+  min-height: 45vh;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #6E6D6B;
+  background-color: #C2E7FF;
+  border: 3px solid #EAF7FF;
+  border-radius: 3px;
+  padding: 0.5rem 3rem;
+  transition: transform .5s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: transform .5s;
+}
+
+.phrase {
+  position: absolute;
+  top: 5em;
+  left: 0;
+  color: black !important;
+} */
